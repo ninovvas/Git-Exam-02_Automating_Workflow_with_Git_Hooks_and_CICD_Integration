@@ -13,3 +13,7 @@
 ## Valid commit
 
 ![alt text](images/valid_commit.png)
+
+## Check pre-push with possitive test
+
+![alt text](images/image_positive_push.png)
