@@ -17,3 +17,11 @@
 ## Check pre-push with possitive test
 
 ![alt text](images/image_positive_push.png)
+
+## Failed test case after change the test
+
+![alt text](images/failed_test.png)
+
+## After fixing the test and push to repo
+
+![alt text](images/after_fixing_tests.png)
