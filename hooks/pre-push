@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# Pre-push hook to run tests
+
+echo "Running pre-push hook: Running tests..."
+
+# Navigate back to project root
+#cd ../..
+
+# Run tests
+npm test
+
+# Check if tests passed
+if [ $? -ne 0 ]; then
+    echo "❌ Tests failed!"
+    echo "Please fix failing tests before pushing."
+    exit 1
+fi
+
+echo "✅ All tests passed!"
+exit 0

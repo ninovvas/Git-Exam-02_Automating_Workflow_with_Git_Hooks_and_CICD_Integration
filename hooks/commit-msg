@@ -1,0 +1,22 @@
+#!/bin/sh
+
+# Read the commit message
+commit_message=$(cat "$1")
+
+# Define the required format: TASK-XXX: Description
+pattern="^TASK-[0-9]+: .+"
+
+if ! echo "$commit_message" | grep -qE "$pattern"; then
+    echo "❌ Invalid commit message format!"
+    echo ""
+    echo "Required format: TASK-XXX: Description"
+    echo "Examples:"
+    echo "  ✅ TASK-123: Fix calculator division by zero"
+    echo "  ✅ TASK-456: Add new utility functions"
+    echo "  ✅ TASK-789: Update documentation"
+    echo ""
+    echo "Your message: $commit_message"
+    exit 1
+fi
+
+echo "✅ Commit message format is valid"

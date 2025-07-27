@@ -1,0 +1,17 @@
+#!/bin/sh
+# Pre-commit hook to check code formatting
+
+echo "Running pre-commit hook: Checking code formatting..."
+
+# Run prettier check
+npm run format-check
+
+# Check if prettier found any formatting issues
+if [ $? -ne 0 ]; then
+    echo "❌ Code formatting check failed!"
+    echo "Please run 'npm run format' to fix formatting issues."
+    exit 1
+fi
+
+echo "✅ Code formatting check passed!"
+exit 0
