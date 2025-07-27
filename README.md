@@ -14,10 +14,6 @@
 
 ![alt text](images/valid_commit.png)
 
-## Check pre-push with possitive test
-
-![alt text](images/image_positive_push.png)
-
 ## Failed test case after change the test
 
 ![alt text](images/failed_test.png)
