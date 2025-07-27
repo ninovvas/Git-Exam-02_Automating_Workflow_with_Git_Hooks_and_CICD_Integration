@@ -1,0 +1,16 @@
+{
+  "name": "git-exam-02_automating_workflow_with_git_hooks_and_cicd_integration",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "jest": "^30.0.5",
+    "prettier": "^3.6.2"
+  }
+}
